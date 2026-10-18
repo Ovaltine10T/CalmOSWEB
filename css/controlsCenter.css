@@ -111,13 +111,53 @@
                 height: 100%;
                 width: 100%;
                 padding: 6px;
-                border-radius: var(--itemCC-borderRadius);
-                background: rgba(255, 255, 255, calc(var(--bg-liquidOpacity) + 30%));
-                transition: all calc(0.3s * var(--bg-speedAnimation)), opacity 0s;
+                border-radius: var(--bg-systemCornerRadius);
+                background: rgba(255, 255, 255, calc(var(
+                --bg-liquidOpacity) + 30%));
+                transition: all calc(0.3s * var(
+                --bg-speedAnimation)), opacity 0s;
                 pointer-events: auto;
                 position: relative;
                 backdrop-filter: none;
                 opacity: 0;
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
                 svg {
                     height: calc(100% - 10px);
@@ -336,6 +376,7 @@
                         .sliderIN {
                             width: 100%;
                             background-color: white;
+                            border-radius: var(--bg-systemCornerRadius);
                         }
                     }
 
