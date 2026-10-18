@@ -24,7 +24,7 @@
     width: calc(100% - 40px);
     margin-top: 45px;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,12 +37,13 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    transition: opacity 0.15s;
+    transition: opacity 0.15s, scale 0.15s;
     cursor: pointer;
 }
 
 .settingsItem:active {
     opacity: 0.6;
+    scale: 0.95
 }
 .settingsItem.noActiveAnim:active {
     opacity: 1;
@@ -54,7 +55,8 @@
     height: 20px;
     width: 20px;
     right: 25px;
-    fill: var(--bg-colorDark0System);
+    fill: rgb(255 255 255);
+    background: #ff000000;
 }
 .settingsItem .settingsIcon svg {
     position: static;
@@ -63,15 +65,15 @@
     right: unset;
 }
 .settingsItem.brTop {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     margin-top: 3px;
     padding-top: 15px;
 }
 
 .settingsItem.brBottom {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     margin-bottom: 3px;
     padding-bottom: 15px;
 }
@@ -118,7 +120,7 @@
     position: absolute;
     right: 15px;
     display: flex;
-    width: 34px;
+    width: 38px;
     height: 14px;
     border-radius: 20px;
     background: none;
@@ -129,25 +131,27 @@
 }
 .toggleBtn.active {
     background: var(--bg-colorDark6System);
-    height: 5px;
+    height: 14px;
     border: solid 3px var(--bg-colorDark6System);
 }
 .toggleBtn.active::before {
-    transform: translate(20px) scale(1.1);
+    transform: translate(24px) scale(1.5);
     border: solid 3px var(--bg-colorDark3System);
+    width: 30px;
 }
 .toggleBtn::before {
     position: absolute;
     content: "";
     top: 50%;
-    left: -3px;
+    left: -5px;
     translate: 0 -50%;
-    width: 14px;
+    width: 24px;
     height: 14px;
     border-radius: 20px;
     background: var(--bg-appbackground);
-    border: solid 3px rgb(175, 175, 175);
+    border: solid 3px rgb(175 175 175);
     transition: transform 0.3s, border 0.05s 0.15s;
+    scale: 0.5;
 }
 .toggleBtn:active {
     scale: 0.9;
@@ -168,7 +172,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: #f6526800;
+    background: rgb(21 126 225);
     flex: 0 0 auto;
 }
 

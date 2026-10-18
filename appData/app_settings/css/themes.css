@@ -92,6 +92,7 @@
     width: 100%;
     height: 100%;
     background: #00000050;
+    backdrop-filter: blur(5px);
     opacity: 0;
     align-items: center;
     justify-content: center;
@@ -107,14 +108,14 @@
 }
 .overlayFullScreen.openForWallpaper #optionSelectWallpaper {
     translate: none;
+    scale: 0.96;
 }
 
 #optionSelectWallpaper {
     position: absolute;
     display: flex;
     flex-direction: column;
-    border-top-left-radius: var(--bg-borderRadiusPhone);
-    border-top-right-radius: var(--bg-borderRadiusPhone);
+    border-radius: var(--bg-borderRadiusPhone);
     padding: 20px;
     padding-bottom: 40px;
     gap: 10px;
@@ -122,6 +123,7 @@
     bottom: 0;
     translate: 0 100%;
     transition: 0.3s;
+    scale: 0.5;
 }
 #optionSelectWallpaper h4 {
     color: var(--bg-color);
